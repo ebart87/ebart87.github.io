@@ -20,13 +20,29 @@
     .social-link {
       color: blue;
       background: rgba(150, 150, 150, 0.5);
+      height: 36px;
+      width: 36px;
+      display: inline-block;
     }
 
     /* BIO STYLES */
+    .bio-wrapper {
+      font-size: 24px;
+    }
+    .bio-wrapper:after {
+      visibility: hidden;
+      display: block;
+      font-size: 0;
+      content: " ";
+      clear: both;
+      height: 0;
+    }
     .bio-box {
       border: 1px solid black;
-      width: 50%;
-      padding: 20px;
+      box-sizing: border-box;
+      float: left;
+      width: 25%;
+      padding: 2%;
       font-size: 1rem;
     }
     .bio-box h3 {
@@ -37,7 +53,4 @@
     }
     .bio-copy a {
       color: green;
-    }
-    .bio-wrapper {
-      font-size: 24px;
     }
