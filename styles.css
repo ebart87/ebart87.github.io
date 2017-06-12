@@ -58,7 +58,11 @@
       box-sizing: border-box;
       float: left;
       width: 23%;
+<<<<<<< HEAD
       padding: 0 2% 2%;
+=======
+      padding: 2%;
+>>>>>>> 42ab263b28ada3c375bbe5e24d493cedf1c7948a
       font-size: 1rem;
       margin: 40px 1% 0;
     }
