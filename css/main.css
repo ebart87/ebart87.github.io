@@ -4,7 +4,15 @@
       padding: 0 30px;
     }
     body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
       font-family: helvetica, arial, sans-serif;
+    }
+    .content-container {
+      flex-grow: 1;
+      padding-top: 10vh;
+      width: 100%;
     }
     h1 {
       font-size: 7vh;
@@ -15,6 +23,7 @@
     }
     p {
       line-height: 1.5;
+      margin: 0.75em 0;
     }
     h2 {
       font-size: 2em;
@@ -233,15 +242,21 @@
       text-align: center;
     }
     .home-callout {
+      display: flex;
+      text-align: center;
       background-color: #000;
       color: #fff;
       padding: 7vh 0;
     }
     .callout-title {
+      flex-grow: 1;
+      flex-basis: 0;
       font-size: 5.75vw;
       text-align: right;
       text-transform: uppercase;
     }
     .callout-copy {
       font-size: 0.8rem;
+      flex-shrink: 0;
+      flex-basis: 50%;
     }
